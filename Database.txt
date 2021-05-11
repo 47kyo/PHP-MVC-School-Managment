@@ -1,0 +1,47 @@
+
+Database name : school
+
+
+CREATE TABLE student (
+
+    firstName varchar(255),
+    lastName varchar(255),
+    cin varchar(255),
+    cne varchar(255),
+    email varchar(255),
+    address varchar(250),
+    birthday varchar(255),
+    faculty  varchar(255),
+    cycle  varchar(250),
+    SchoolYear varchar(255),
+    PRIMARY KEY (cne)
+)
+
+
+CREATE TABLE element(
+
+    NameModule varchar(255),
+    StudentCne varchar(255),
+    Elemntnam varchar(255),
+    semester varchar(255),
+    mark varchar(255),
+
+    PRIMARY KEY (Elemntnam),
+    FOREIGN KEY (StudentCne) REFERENCES student (cne)
+)
+
+
+CREATE TABLE Teacher(
+
+    firstName varchar(255),
+    lastName varchar(255),
+    cin varchar(255),
+    email varchar(255),
+    address varchar(250),
+    birthday varchar(255),
+    faculty  varchar(255),
+    PRIMARY KEY (cin)
+)
+
+ 
+
