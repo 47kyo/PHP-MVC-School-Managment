@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en" data-scroll="0" class="fsjs fsflexbox fsno-touch fsgeolocation fsdraganddrop fsrgba fsbackgroundsize fsborderimage fsborderradius fsboxshadow fstextshadow fsopacity fscsscolumns fscssgradients fsfontface fsvideo fsaudio fslocalstorage fssessionstorage fsapplicationcache wf-notosans-n4-active wf-notosans-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+        <title>School</title>
+
+
+            <link rel="icon" type="image/x-icon" href="https://www.formstack.com/favicon.ico">
+
+        <link rel="stylesheet" type="text/css" href="./Ressources/reset_53bc1bb20a.css">
+        <link rel="stylesheet" type="text/css" href="./Ressources/jquery-ui_61ec43d7ce.css">
+        <link rel="stylesheet" type="text/css" href="./Ressources/default-v4_f1d5918f48.css">
+        <link rel="stylesheet" type="text/css" href="./Ressources/corporateOffice_5f89b8eaa3.css">
+        <link rel="stylesheet" type="text/css" href="./Ressources/uil-static.css">
+        <link rel="stylesheet" type="text/css" href="./Ressources/dialogs_00a7ec5f05.css">
+
+
+
+
+    <style type="text/css">
+            </style>
+</head>
+
+
+
+
+
+    <body id="fsLocal" class="fsBody">
+
+<form method="post" action="controllers.php" class="fsForm fsSingleColumn fsMaxCol1 with-ads" >
+
+
+  <div class="fsSectionHeader">
+    <h2 class="fsSectionHeading">Add Marks</h2>
+    </div>
+
+
+               <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92076923" lang="en" fs-field-type="email" fs-field-validation-name="Email">
+                <input type="text" id="cne" name="cne" size="50" value="" class="fsField fsFormatEmail">
+                <label class="fsSupporting" for="field92076826-last">Student CNE</label>
+                 </div>
+
+
+            <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92077056" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select id="faculty" name="faculty" size="1" class="fsField">
+        <option value="GI">GI</option>
+        <option value="2"disabled >GBI</option>
+        <option value="3" disabled>GE</option>
+        <option value="4" disabled>TM</option>
+        <option value="5" disabled>TCC</option>
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Faculty</label>
+        </div>
+
+
+        <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="semestereDiv" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select onchange="ModulesChange3();" id="semestere" name="semestere" size="1" class="fsField">
+        <option value="0">Select the Semestere</option>
+        <option value="S1" disabled>S1</option>
+        <option value="S2" disabled>S2</option>
+        <option value="S3" disabled>S3</option>
+        <option value="S4" >S4</option>
+
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Semestere</label>
+        </div>
+
+
+
+
+
+        <div style="display: none;" class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="s1div" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select  onchange="ModulesChange2();" id="Module" name="Module" size="1" class="fsField">
+        <option value="0">Select the Element</option>
+        <option value="Communication">Communication</option>
+        <option value="Architecture">Architecture</option>
+        <option value="Math">Math</option>
+        <option value="C">C</option>
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Module</label>
+        </div>
+
+
+
+        <div style="display: none;" class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="s2div" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select onchange="ModulesChange2();" id="Module" name="Module" size="1" class="fsField">
+            <option value="0">Select the Module</option>
+        <option value="Networks">Networks</option>
+        <option value="WEB">WEB/Unix</option>
+        <option value="Economis">Economis</option>
+        <option value="C++">C++/DB</option>
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Module</label>
+        </div>
+
+
+        <div style="display: none;" class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="s3div" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select onchange="ModulesChange2();" id="Module" name="Module" size="1" class="fsField">
+            <option value="0">Select the Module</option>
+        <option value="Math2">Math2</option>
+        <option value="UML">UML</option>
+        <option value="Java">Java</option>
+        <option value="C#/DB">C#/DB</option>
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Module</label>
+        </div>
+
+
+        <div style="display: none;" class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="s4div" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select onchange="ModulesChange2();" id="s4select" name="models4" size="1" class="fsField">
+            <option value="0">Select Module</option>
+        <option value="Communication2">Communication2</option>
+        <option value="PHP">PHP</option>
+        <option value="Stages">Stages</option>
+        <option value="PFE">PFE</option>
+
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Module</label>
+        </div>
+
+
+
+
+
+        <div style="display: none;" class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="com1div" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select  id="com1" name="com1" size="1" class="fsField">
+            <option value="0">Select Element</option>
+        <option value="Frensh">Frensh</option>
+        <option value="English">English</option>
+        <option value="TEC">Techniques of Communication</option>
+
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Elements</label>
+        </div>
+
+        <div style="display: none;" class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="com2div" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select  id="com2" name="com2" size="1" class="fsField">
+      <option value="0">Select Element</option>
+       <option value="1">Project management</option>
+        <option value="2">Frensh</option>
+        <option value="3">English</option>
+
+
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Elements</label>
+        </div>
+
+        <div style="display: none;" class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="phpdiv" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select  id="php" name="php" size="1" class="fsField">
+            <option value="0">Select Element</option>
+            <option value="PHP OOP">PHP OOP</option>
+        <option value="Presentations">Presentations</option>
+        <option value="Mini Project">Mini Project</option>
+
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Elements</label>
+        </div>
+
+        <div style="display: none;" class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="stagesdiv" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select id="selctedStage" name="selctedStage" size="1" class="fsField">
+            <option value="0">Select Element</option>
+        <option value="SFE">SFE</option>
+        <option value="Mini SI">SI</option>
+
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Elements</label>
+        </div>
+
+        <div style="display: none;" class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="pfediv" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select id="pfe" name="pfe" size="1" class="fsField">
+            <option value="0">Select Element</option>
+        <option value="PFE">PFE</option>
+
+
+
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Elements</label>
+        </div>
+
+        <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92076923" lang="en" fs-field-type="email" fs-field-validation-name="Email">
+          <input type="text" id="mark" name="mark" size="50" value="" class="fsField fsFormatEmail">
+          <label class="fsSupporting" for="field92076826-last">Mark</label>
+           </div>
+
+
+</div>
+
+
+
+<div id="fsSubmit3866388" class="fsSubmit fsPagination">
+
+    <button type="button" id="fsPreviousButton3866388" class="fsPreviousButton" value="Previous Page" style="display:none;" aria-label="Previous"><span class="fsFull">Previous</span><span class="fsSlim">←</span></button>
+    <button type="button" id="fsNextButton3866388" class="fsNextButton" value="Next Page" style="display:none;" aria-label="Next"><span class="fsFull">Next</span><span class="fsSlim">→</span></button>
+
+    <input id="submit2" class="fsSubmitButton" name="submit2" type="submit" value="Submit Form">
+
+
+
+
+  <div class="clear"></div>
+  <div class="withAds">
+      </div>
+</div>
+
+
+
+</form>
+
+<script src="main.js"></script>
+
+
+
+
+
+
+
+</body></html>

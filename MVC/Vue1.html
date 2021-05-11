@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en" data-scroll="0" class="fsjs fsflexbox fsno-touch fsgeolocation fsdraganddrop fsrgba fsbackgroundsize fsborderimage fsborderradius fsboxshadow fstextshadow fsopacity fscsscolumns fscssgradients fsfontface fsvideo fsaudio fslocalstorage fssessionstorage fsapplicationcache wf-notosans-n4-active wf-notosans-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+        <title>School</title>
+
+
+            <link rel="icon" type="image/x-icon" href="https://www.formstack.com/favicon.ico">
+
+        <link rel="stylesheet" type="text/css" href="./Ressources/reset_53bc1bb20a.css">
+        <link rel="stylesheet" type="text/css" href="./Ressources/jquery-ui_61ec43d7ce.css">
+        <link rel="stylesheet" type="text/css" href="./Ressources/default-v4_f1d5918f48.css">
+        <link rel="stylesheet" type="text/css" href="./Ressources/corporateOffice_5f89b8eaa3.css">
+        <link rel="stylesheet" type="text/css" href="./Ressources/uil-static.css">
+        <link rel="stylesheet" type="text/css" href="./Ressources/dialogs_00a7ec5f05.css">
+
+
+
+
+    <style type="text/css">
+            </style>
+</head>
+
+
+
+
+
+    <body id="fsLocal" class="fsBody">
+
+<form method="post" action="../MVC/controllers.php" class="fsForm fsSingleColumn fsMaxCol1 with-ads" >
+
+
+         <div class="fsSectionHeader">
+            <h2 class="fsSectionHeading">Student registration</h2>
+            </div>
+
+
+
+            <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92076826" lang="en" fs-field-type="name" fs-field-validation-name="Name">
+             <div class="fsSubFieldGroup">
+             <div class="fsSubField fsNameFirst">
+             <input type="text"required  id="fn" name="fn" size="20" aria-label="First Name" value="" class="fsField fsFieldName">
+            <label class="fsSupporting" for="field92076826-first">First Name</label>
+            </div>
+            <div class="fsSubField fsNameLast">
+            <input type="text" id="ln" required name="ln" size="20" aria-label="Last Name" value="" class="fsField fsFieldName">
+            <label class="fsSupporting" for="field92076826-last">Last Name</label>
+            </div>
+            </div>
+            <div class="clear"></div>
+            </div>
+
+            <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92076826" lang="en" fs-field-type="name" fs-field-validation-name="Name">
+               <div class="fsSubFieldGroup">
+               <div class="fsSubField fsNameFirst">
+               <input type="text" id="cne" required  name="cne" size="20" aria-label="First Name" value="" class="fsField fsFieldName">
+              <label class="fsSupporting" for="field92076826-first">CNE</label>
+              </div>
+              <div class="fsSubField fsNameLast">
+              <input type="text" id="cin" required name="cin" size="20" aria-label="Last Name" value="" class="fsField fsFieldName">
+              <label class="fsSupporting" for="field92076826-last">CIN</label>
+              </div>
+              </div>
+              <div class="clear"></div>
+              </div>
+
+
+
+            <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92076923" lang="en" fs-field-type="email" fs-field-validation-name="Email">
+            <input type="email" required id="email" name="email" size="50" value="" class="fsField fsFormatEmail">
+            <label class="fsSupporting" for="field92076826-last">Email</label>
+             </div>
+
+             <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92076923" lang="en" fs-field-type="email" fs-field-validation-name="Email">
+              <input type="text" required id="addresse" name="addresse" size="50" value="" class="fsField fsFormatEmail">
+              <label class="fsSupporting" for="field92076826-last">Addresse</label>
+               </div>
+
+               <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92076923" lang="en" fs-field-type="email" fs-field-validation-name="Email">
+                <input type="text" required id="date" name="date" size="50" value="" class="fsField fsFormatEmail">
+                <label class="fsSupporting" for="field92076826-last">Date of birthday</label>
+                 </div>
+
+
+            <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92077056" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select id="faculty" name="year" size="1" class="year">
+        <option value="2019/2020">2019/2020</option>
+          </select>
+          <label class="fsSupporting" for="field92076826-last">School year</label>
+        </div>
+
+        <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92077056" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select id="faculty" name="faculty" size="1" class="fsField">
+        <option value="GI">GI</option>
+        <option value="2"disabled >GBI</option>
+        <option value="3" disabled >GE</option>
+        <option value="4"disabled >TM</option>
+        <option value="5" disabled>TCC</option>
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Faculty</label>
+        </div>
+
+        <div class="fsRowBody fsCell fsFieldCell fsFirst fsLast fsLabelVertical fsSpan100" id="fsCell92077056" lang="en" fs-field-type="select" fs-field-validation-name="Dropdown List">
+          <select onchange="ModulesChange();" id="cycle" name="cycle" size="1" class="fsField">
+        <option value="First Year DUT" disabled >First Year DUT</option>
+        <option value="Second Year DUT">Second Year DUT</option>
+
+          </select>
+          <label class="fsSupporting" for="field92076826-last">Cycle</label>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<div id="fsSubmit3866388" class="fsSubmit fsPagination">
+
+    <button type="button" id="fsPreviousButton3866388" class="fsPreviousButton" value="Previous Page" style="display:none;" aria-label="Previous"><span class="fsFull">Previous</span><span class="fsSlim">←</span></button>
+    <button type="button" id="fsNextButton3866388" class="fsNextButton" value="Next Page" style="display:none;" aria-label="Next"><span class="fsFull">Next</span><span class="fsSlim">→</span></button>
+
+    <input id="submit" class="fsSubmitButton" name="submit" type="submit" value="Submit Form">
+
+
+
+
+  <div class="clear"></div>
+  <div class="withAds">
+      </div>
+</div>
+
+
+
+</form>
+
+<script src="main.js"></script>
+
+
+
+
+
+
+
+</body></html>
